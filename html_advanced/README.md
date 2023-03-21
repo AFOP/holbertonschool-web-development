@@ -1,5 +1,5 @@
 # HTML, advanced
-<img src="/img/estruct.jpg" alt="Estructura HTML">
+<img src="img/estruct.jpg" alt="Estructura HTML">
 
 ## Resources
 ### Read or watch:
