@@ -1,0 +1,164 @@
+/* General */
+html,
+body {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+}
+.container {
+  width: 80%;
+  margin: 30px auto;
+}
+.text {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  text-align: center;
+}
+
+/* header */
+header {
+  position: relative;
+  width: 80%;
+  height: 29.46px;
+  margin: 30px auto;
+  font-size: 12px;
+  z-index: 1;
+  color: #FFFFFF;
+}
+
+header .menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 29.46px;
+}
+
+header .logo {
+  width: 167.02px;
+  height: 29.46px;
+}
+
+.menu a {
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* Section main_part */
+.main_part {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1093px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #FFFFFF;
+  background-color: rgba(7, 22, 41, 1);
+  z-index: 0;
+}
+
+.main_part:before {
+  content: '';
+  position: absolute;
+  top: -66px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1030px;
+  background-image: url('img/Bitmap.png');
+  filter: grayscale(100%);
+  background-size: cover;
+  z-index: -2;
+}
+
+.main_part::after {
+  content: '';
+  position: absolute;
+  top: -66px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1030px;
+  background: linear-gradient(to top, rgba(7, 22, 41, 1), transparent);
+  z-index: -1;
+}
+
+.main_part h1 {
+  margin-top: 12%;
+  font-size: 120px;
+  margin-bottom: 0;
+}
+
+.main_part h2 {
+  margin-top: 12%;
+  font-size: 32px;
+  font-weight: lighter;
+  color: #FFFFFF;
+}
+
+.main_part span {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+.main_part h3 {
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+
+.main_part p {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+.main_part button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 44px;
+  margin: 30px auto;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Source Sans Pro';
+  font-size: 14px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+  color:#FFFFFF;
+  background-color: #C271FF;
+}
+
+.main_part .pros {
+  display: flex;
+  height: 237px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main_part .pro {
+  flex-direction: column;
+  width: 150px;
+  height: 237px;
+  margin: 50px 50px 0 50px;
+}
+
+.main_part .pro p {
+  font-size: 16px;
+  font-style: italic;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.main_part .pro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Section main_part */

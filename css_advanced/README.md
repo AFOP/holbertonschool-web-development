@@ -1,4 +1,4 @@
-# HTML, advanced
+# CSS, advanced
 <img src="img/desing.jpg" alt="Estructura HTML">
 
 ## Resources
