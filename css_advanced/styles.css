@@ -263,6 +263,7 @@ header .logo {
 
 .video-img {
   margin: 0;
+  border-radius: 5%;
 }
 .video h2, p, div {
   margin: 13px;
