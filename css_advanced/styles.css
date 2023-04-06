@@ -20,6 +20,11 @@ body {
   font-style: normal;
 }
 
+span {
+  color: #C271FF;
+  font-weight: bold;
+}
+
 /* header */
 header {
   position: relative;
@@ -102,11 +107,6 @@ header .logo {
   font-size: 32px;
   font-weight: lighter;
   color: #FFFFFF;
-}
-
-.main_part span {
-  color: #C271FF;
-  font-weight: bold;
 }
 
 .main_part h3 {
@@ -219,4 +219,96 @@ header .logo {
 
 .testimonial .text .profile {
   font-style: italic;
+}
+
+/* Tutorials */
+.tutorials {
+  position: relative;
+  width: 85%;
+  height: 550px;
+  top: 1100px;
+  margin: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tutorials .tutorials-title {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.tutorials-row {
+  flex-direction: row;
+  max-width: 255px;
+  margin: 0 9px 0 0;
+  padding: 0;
+}
+
+.tutorials-column {
+  flex-direction: column;
+  height: 335px;
+  margin: 0;
+  padding: 0;
+}
+
+.video {
+  max-width: 255px;
+  margin-bottom: 0;
+}
+
+.video-img {
+  margin: 0;
+}
+.video h2, p, div {
+  margin: 13px;
+}
+
+.video p {
+  size: 14px;
+  color: rgba(7, 22, 41, 0.5);
+}
+
+.author-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author-row {
+  display: flex;
+  align-items: center;
+}
+
+.author-row h3 {
+  font-size: 14px;
+  color: #C271FF;
+  margin-left: 13px;
+}
+
+.tutorials .video-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+}
+
+.tutorials .video-description {
+  font-size: 14px;
+  color: black;
+}
+
+.stars {
+  display: flex;
+  margin-top: 0;
+  margin-left: 13px;
+  justify-content: space-between;
+}
+
+.stars p {
+  color: #C271FF;
+  font-size: 14px;
 }
