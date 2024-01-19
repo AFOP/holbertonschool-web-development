@@ -177,54 +177,36 @@ header .logo {
   display: flex;
   flex-direction: row;
   width: 80%;
-  padding: auto;
 }
 
 .testimonial img {
-  width: 394px;
-  height: 341px;
-  -webkit-mask-image: url(mask/mask.png);
-  mask-image: url(mask/mask.png);
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: top;
-  mask-position: top;
-  -webkit-mask-size: 160px;
-  mask-size: 160px;
-  overflow: hidden;
-  position: absolute;
-}
-
-.testimonial img::before {
-  position: relative;
+  width: 20em;
+  height: 20em;
+  object-fit: cover;
+  clip-path: ellipse(25% 25% at 50% 30%);
 }
 
 .testimonial .text {
-  size: 22px;
+  size: 20em;
   color: #FFFFFF;
 }
 
-.testimonial blockquote {
-  margin-left: 40%;
-  max-width: 80%;
+.testimonial .test-blockquote {
+  max-width: 100%;
 }
 
-.testimonial .text p {
-  margin-left: 40%;
-}
-
-.testimonial .text .title {
+.testimonial .test-title,
+.testimonial .test-profile {
   font-weight: bold;
-}
-
-.testimonial .text .profile {
   font-style: italic;
+  padding-left: 40px;
+  margin: 0; /* Asegura que no haya margen adicional */
 }
 
 /* Tutorials */
 .tutorials {
   position: relative;
-  width: 85%;
+  width: 80%;
   height: 550px;
   top: 1100px;
   margin: auto;
@@ -244,14 +226,13 @@ header .logo {
 
 .tutorials-row {
   flex-direction: row;
-  max-width: 255px;
-  margin: 0 9px 0 0;
+  max-width: 243px;
+  max-height: 335px;
+  margin: 0;
   padding: 0;
 }
 
 .tutorials-column {
-  flex-direction: column;
-  height: 335px;
   margin: 0;
   padding: 0;
 }
@@ -263,10 +244,8 @@ header .logo {
 
 .video-img {
   margin: 0;
-  border-radius: 5%;
-}
-.video h2, p, div {
-  margin: 13px;
+  object-fit: cover;
+  clip-path: inset(5% 10% 22% 10%);
 }
 
 .video p {
@@ -283,6 +262,7 @@ header .logo {
 .author-row {
   display: flex;
   align-items: center;
+  margin-left: 9%;
 }
 
 .author-row h3 {
@@ -295,21 +275,115 @@ header .logo {
   font-size: 16px;
   font-weight: bold;
   color: black;
+  margin-left: 9%;
 }
 
 .tutorials .video-description {
   font-size: 14px;
   color: black;
+  margin-left: 9%;
 }
 
 .stars {
   display: flex;
-  margin-top: 0;
-  margin-left: 13px;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .stars p {
   color: #C271FF;
   font-size: 14px;
+}
+
+/* membership */
+.membership-container {
+  position: relative;
+  width: 100%;
+  height: 502px;
+  top: 1200px;
+  color: #FFFFFF;
+  background-color: rgba(7, 22, 41, 1);
+}
+
+.membership {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.smile {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.smile > div {
+  flex-direction: row;
+  max-width: 243px;
+  max-height: 335px;
+  margin: 0;
+  padding: 0;
+}
+
+.membership .membership-title {
+  width: 100%;
+  margin: 30px auto;
+  font-size: 32px;
+  font-weight: normal;
+  margin: -10px 0 10px;
+}
+
+.membership .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 44px;
+  margin: 30px auto;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Source Sans Pro';
+  font-size: 14px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  background-color: #C271FF;
+}
+
+/* FAQ */
+.faq-container {
+  position: relative;
+  width: 80%;
+  height: 550px;
+  top: 1250px;
+  margin: auto;
+  background-color: #FFFFFF;
+  text-align: center;
+  
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  max-height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  margin: 6%;
+}
+
+.item > p {
+  text-align: justify;
+}
+
+/* footer */
+footer {
+  position: relative;
+  width: 80%;
+  height: 29.46px;
+  margin: 30px auto;
+  top: 1500px;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: rgba(7, 22, 41, 1);
 }
