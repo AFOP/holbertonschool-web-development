@@ -63,7 +63,7 @@ header .logo {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 1093px;
+  height: 1150px;
   text-align: center;
   color: #FFFFFF;
   background-color: rgba(7, 22, 41, 1);
@@ -139,6 +139,7 @@ header .logo {
 .main_part .pros {
   display: flex;
   height: 237px;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -146,8 +147,7 @@ header .logo {
 }
 
 .main_part .pro {
-  flex-direction: column;
-  width: 150px;
+  max-width: 150px;
   height: 237px;
   margin: 50px 50px 0 50px;
 }
@@ -169,7 +169,7 @@ header .logo {
   position: relative;
   width: 100%;
   height: 392px;
-  top: 1000px;
+  top: 1050px;
   background-color: #C271FF;
 }
 
@@ -200,7 +200,8 @@ header .logo {
   font-weight: bold;
   font-style: italic;
   padding-left: 40px;
-  margin: 0; /* Asegura que no haya margen adicional */
+  margin: 0;
+  /* Asegura que no haya margen adicional */
 }
 
 /* Tutorials */
@@ -213,6 +214,7 @@ header .logo {
   background-color: #FFFFFF;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .tutorials .tutorials-title {
@@ -299,8 +301,8 @@ header .logo {
 .membership-container {
   position: relative;
   width: 100%;
-  height: 502px;
-  top: 1200px;
+  height: 550px;
+  top: 1300px;
   color: #FFFFFF;
   background-color: rgba(7, 22, 41, 1);
 }
@@ -314,9 +316,10 @@ header .logo {
 .smile {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.smile > div {
+.smile>div {
   flex-direction: row;
   max-width: 243px;
   max-height: 335px;
@@ -326,10 +329,10 @@ header .logo {
 
 .membership .membership-title {
   width: 100%;
-  margin: 30px auto;
   font-size: 32px;
   font-weight: normal;
-  margin: -10px 0 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .membership .boton {
@@ -353,11 +356,10 @@ header .logo {
   position: relative;
   width: 80%;
   height: 550px;
-  top: 1250px;
+  top: 1350px;
   margin: auto;
   background-color: #FFFFFF;
   text-align: center;
-  
 }
 
 .row {
@@ -372,18 +374,91 @@ header .logo {
   margin: 6%;
 }
 
-.item > p {
+.item>p {
   text-align: justify;
 }
 
 /* footer */
 footer {
   position: relative;
-  width: 80%;
-  height: 29.46px;
-  margin: 30px auto;
-  top: 1500px;
+  width: 100%;
+  height: auto;
+  top: 1650px;
   font-size: 12px;
   color: #FFFFFF;
   background-color: rgba(7, 22, 41, 1);
+}
+
+.footer-container {
+  width: 80%;
+  margin: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.footer-content img {
+  max-width: 100%;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-left: 10px;
+}
+
+footer>p {
+  text-align: center;
+  font-size: 8px;
+  color: grey;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .main_part {
+    height: 1700px;
+  }
+  .main_part h1 {
+    font-size: 100px;
+  }
+
+  .testimonials {
+    top: 1600px;
+  }
+
+  .testimonial .text {
+    size: 10em;
+  }
+
+  .testimonial img {
+    width: 10em;
+    height: 10em;
+  }
+
+  .tutorials {
+    top: 1650px;
+  }
+
+  .membership-container {
+    top: 2500px;
+    height: 900px;
+  }
+
+  .faq-container {
+    top: 2550px;
+  }
+
+  .faq-container .row {
+    max-height: 600px;
+  }
+
+  footer {
+    top: 3200px;
+  }
 }
