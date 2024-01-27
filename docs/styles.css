@@ -1,0 +1,464 @@
+/* General */
+html,
+body {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #FFFFFF;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+}
+
+span {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+/* header */
+header {
+  position: relative;
+  width: 80%;
+  height: 29.46px;
+  margin: 30px auto;
+  font-size: 12px;
+  z-index: 1;
+  color: #FFFFFF;
+}
+
+header .menu {
+  position: absolute;
+  float: right;
+  top: 0;
+  right: 0;
+  height: 29.46px;
+}
+
+header .logo {
+  width: 167.02px;
+  height: 29.46px;
+}
+
+.menu a {
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 5px;
+}
+
+/* Section main_part */
+.main_part {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1150px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: rgba(7, 22, 41, 1);
+  z-index: 0;
+}
+
+.main_part:before {
+  content: '';
+  position: absolute;
+  top: -66px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1030px;
+  background-image: url('img/Bitmap.png');
+  filter: grayscale(100%);
+  background-size: cover;
+  z-index: -2;
+}
+
+.main_part::after {
+  content: '';
+  position: absolute;
+  top: -66px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1030px;
+  background: linear-gradient(to top, rgba(7, 22, 41, 1), transparent);
+  z-index: -1;
+}
+
+.main_part h1 {
+  margin-top: 12%;
+  font-size: 120px;
+  margin-bottom: 0;
+}
+
+.main_part h2 {
+  margin-top: 12%;
+  font-size: 32px;
+  font-weight: lighter;
+  color: #FFFFFF;
+}
+
+.main_part h3 {
+  font-size: 18px;
+  margin-bottom: 1px;
+}
+
+.main_part p {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 12px;
+}
+
+.main_part button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 44px;
+  margin: 30px auto;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Source Sans Pro';
+  font-size: 14px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  background-color: #C271FF;
+}
+
+.main_part .pros {
+  display: flex;
+  height: 237px;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main_part .pro {
+  max-width: 150px;
+  height: 237px;
+  margin: 50px 50px 0 50px;
+}
+
+.main_part .pro p {
+  font-size: 16px;
+  font-style: italic;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.main_part .pro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+/* Testimonials */
+.testimonials {
+  position: relative;
+  width: 100%;
+  height: 392px;
+  top: 1050px;
+  background-color: #C271FF;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+
+.testimonial img {
+  width: 20em;
+  height: 20em;
+  object-fit: cover;
+  clip-path: ellipse(25% 25% at 50% 30%);
+}
+
+.testimonial .text {
+  size: 20em;
+  color: #FFFFFF;
+}
+
+.testimonial .test-blockquote {
+  max-width: 100%;
+}
+
+.testimonial .test-title,
+.testimonial .test-profile {
+  font-weight: bold;
+  font-style: italic;
+  padding-left: 40px;
+  margin: 0;
+  /* Asegura que no haya margen adicional */
+}
+
+/* Tutorials */
+.tutorials {
+  position: relative;
+  width: 80%;
+  height: 550px;
+  top: 1100px;
+  margin: auto;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tutorials .tutorials-title {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: normal;
+}
+
+.tutorials-row {
+  flex-direction: row;
+  max-width: 243px;
+  max-height: 335px;
+  margin: 0;
+  padding: 0;
+}
+
+.tutorials-column {
+  margin: 0;
+  padding: 0;
+}
+
+.video {
+  max-width: 255px;
+  margin-bottom: 0;
+}
+
+.video-img {
+  margin: 0;
+  object-fit: cover;
+  clip-path: inset(5% 10% 22% 10%);
+}
+
+.video p {
+  size: 14px;
+  color: rgba(7, 22, 41, 0.5);
+}
+
+.author-img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.author-row {
+  display: flex;
+  align-items: center;
+  margin-left: 9%;
+}
+
+.author-row h3 {
+  font-size: 14px;
+  color: #C271FF;
+  margin-left: 13px;
+}
+
+.tutorials .video-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-left: 9%;
+}
+
+.tutorials .video-description {
+  font-size: 14px;
+  color: black;
+  margin-left: 9%;
+}
+
+.stars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.stars p {
+  color: #C271FF;
+  font-size: 14px;
+}
+
+/* membership */
+.membership-container {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  top: 1300px;
+  color: #FFFFFF;
+  background-color: rgba(7, 22, 41, 1);
+}
+
+.membership {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.smile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.smile>div {
+  flex-direction: row;
+  max-width: 243px;
+  max-height: 335px;
+  margin: 0;
+  padding: 0;
+}
+
+.membership .membership-title {
+  width: 100%;
+  font-size: 32px;
+  font-weight: normal;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.membership .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 44px;
+  margin: 30px auto;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Source Sans Pro';
+  font-size: 14px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  background-color: #C271FF;
+}
+
+/* FAQ */
+.faq-container {
+  position: relative;
+  width: 80%;
+  height: 550px;
+  top: 1350px;
+  margin: auto;
+  background-color: #FFFFFF;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  max-height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.item {
+  margin: 6%;
+}
+
+.item>p {
+  text-align: justify;
+}
+
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  top: 1650px;
+  font-size: 12px;
+  color: #FFFFFF;
+  background-color: rgba(7, 22, 41, 1);
+}
+
+.footer-container {
+  width: 80%;
+  margin: auto;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.footer-content img {
+  max-width: 100%;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  margin-left: 10px;
+}
+
+footer>p {
+  text-align: center;
+  font-size: 8px;
+  color: grey;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .main_part {
+    height: 1700px;
+  }
+  .main_part h1 {
+    font-size: 100px;
+  }
+
+  .testimonials {
+    top: 1600px;
+  }
+
+  .testimonial .text {
+    size: 10em;
+  }
+
+  .testimonial img {
+    width: 10em;
+    height: 10em;
+  }
+
+  .tutorials {
+    top: 1650px;
+  }
+
+  .membership-container {
+    top: 2500px;
+    height: 900px;
+  }
+
+  .faq-container {
+    top: 2550px;
+  }
+
+  .faq-container .row {
+    max-height: 600px;
+  }
+
+  footer {
+    top: 3200px;
+  }
+}
